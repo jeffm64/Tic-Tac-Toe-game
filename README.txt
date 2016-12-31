@@ -1,0 +1,1 @@
+A simple tic tac toe game. It doesn't use AI, instead using simple operants that make it a tough opponent that can be beat. It keeps score and will let you pick whether you want to be X or O.

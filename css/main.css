@@ -1,0 +1,332 @@
+/*//////////////////////////////////////
+	UNIVERSAL
+//////////////////////////////////////*/
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-weight: normal;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+input, button, select, submit {
+	border: none;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;	
+}
+
+
+
+/*//////////////////////////////////////
+	TEXT TRANSFORM
+//////////////////////////////////////*/
+
+/*Uppercase*/
+.x,
+.o {
+  text-transform: uppercase;
+}
+
+/*Lowercase*/
+
+
+
+/*//////////////////////////////////////
+	LETTER SPACING
+//////////////////////////////////////*/
+
+
+
+/*//////////////////////////////////////
+	FONTS
+//////////////////////////////////////*/
+
+/*Baloo Bhai*/
+h1,
+.score,
+.btn,
+.x-letter,
+.o-letter,
+.x-select,
+.o-select {
+  font-family: 'Baloo Bhai', sans-serif;
+}
+
+/*Actor*/
+.tic-tac-toe {
+  font-family: 'Actor', sans-serif; 
+}
+
+
+
+/*//////////////////////////////////////
+	COLORS
+//////////////////////////////////////*/
+
+/*ORANGE*/
+.orange,
+.o-score,
+.o,
+.o-letter,
+.o-select{
+  color: #DB6C30;
+}
+
+.p-o {
+  background-color: #DB6C30;
+}
+
+/*GRAY*/
+.circle {
+  border: solid 2px #C7C7C7;
+}
+
+/*TEAL*/
+.teal,
+.x-score,
+.x,
+.x-letter,
+.x-select {
+  color: #1DAD7B;
+} 
+
+.p-x {
+  background-color: #1DAD7B;
+}
+
+/*WHITE*/
+.reset-btn {
+  background-color: white;
+}
+
+
+
+/*//////////////////////////////////////
+	TIC TAC TOE
+//////////////////////////////////////*/
+
+.tic-tac-toe {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+}
+
+h1 {
+  padding-bottom: 15px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.p1-win,
+.p2-win,
+.tie {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+/*//////////////////////////////////////
+	START MENU
+//////////////////////////////////////*/
+
+.x-select,
+.o-select {
+  font-size: 110px;
+  margin: 10px;
+  padding: 0px 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+}
+
+/*//////////////////////////////////////
+	PLAYERS
+//////////////////////////////////////*/
+
+.player-name {
+  margin-left: 15px;
+}
+
+.player-name,
+.circle {
+  float: left;
+  width: 25%;
+}
+
+.circle {
+  display: inline-block;
+  margin: 5px 0 20px 0;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*//////////////////////////////////////
+	TIC TAC TOE BOARD
+//////////////////////////////////////*/
+
+.btn {
+  height: 80px;
+  width: 80px;
+  font-size: 64px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.x,
+.o {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+/*//////////////////////////////////////
+	SCOREBOARD
+//////////////////////////////////////*/
+
+.scoreboard {
+  padding-top: 30px;
+}
+
+.reset-btn,
+.player-score {
+  float: left;
+  width: 33%;
+  padding: 0 15px;
+}
+
+
+.reset-btn {
+  font-size: 32px;
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+  box-shadow: 0px 0px 4px 4px rgba(122,122,122,1);
+}
+
+/*//////////////////////////////////////
+////////////////////////////////////////
+	MEDIA QUERIES
+////////////////////////////////////////
+//////////////////////////////////////*/
+
+@media (min-width: 620px) {
+  
+  .tic-tac-toe {
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .players,
+  .ttt-board,
+  .scoreboard {
+    width: 33%;
+    float: left;
+  }
+  
+  .reset-btn,
+  .player-score {
+    float: none;
+    width: auto;
+  }
+  
+  .player-name,
+  .circle {
+    float: none;
+  }
+  
+  .player-name {
+    width: auto;
+  }
+  
+  .circle {
+    width: 50px;
+  }
+  
+  .btn {
+    height: 50px;
+    width: 50px;
+    font-size: 34px;
+  }
+  
+  
+  
+}
+
+@media (min-width: 800px) {
+  
+  .btn {
+    height: 70px;
+    width: 70px;
+    font-size: 54px;
+  }
+  
+  
+  
+  
+}
+
+@media (min-width: 1000px) {
+  
+  h1 {
+    font-size: 59px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+  
+  .btn {
+    height: 85px;
+    width: 85px;
+    font-size: 69px;
+  }
+  
+  
+}
